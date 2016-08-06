@@ -13,6 +13,12 @@ class FlickrFeedCollectionViewController: UICollectionViewController {
 
     private var feedItems = [FeedItem]()
     
+    private lazy var refreshControl: UIRefreshControl = {
+        let refresh = UIRefreshControl()
+        refresh.addTarget(self, action: #selector(pullToRefresh), forControlEvents: UIControlEvents.ValueChanged)
+        return refresh
+    }()
+    
     private lazy var flickrController = {
         return FlickrController()
     }()
@@ -20,15 +26,39 @@ class FlickrFeedCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configurePullToRefresh()
+        fetchFeed()
+    }
+    
+    func pullToRefresh(sender: AnyObject) {
+        fetchFeed()
+    }
+    
+    private func fetchFeed() {
+        
         self.flickrController.fetchPublicFeed({ (items) in
-                self.feedItems = items
-                self.collectionView?.reloadData()
-            }) { (error) in
-                let ac = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .Alert)
-                let ok = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
-                ac.addAction(ok)
-                self.presentViewController(ac, animated: true, completion: nil)
+            
+            self.feedItems = items
+            self.collectionView?.reloadData()
+            self.refreshControl.endRefreshing()
+            
+        }) { (error) in
+            
+            self.refreshControl.endRefreshing()
+            self.showError(error)
         }
+    }
+    
+    private func showError(error: NSError?) {
+        let ac = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .Alert)
+        ac.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
+        self.presentViewController(ac, animated: true, completion: nil)
+    }
+    
+    private func configurePullToRefresh() {
+        self.collectionView?.addSubview(refreshControl)
+        // make pull-to-refresh available even if the feed is empty or displaying too few items to scroll
+        self.collectionView?.alwaysBounceVertical = true
     }
     
     private func feedItemForIndexPath(indexPath: NSIndexPath) -> FeedItem? {
