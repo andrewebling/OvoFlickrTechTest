@@ -93,6 +93,7 @@
 		7DA0F6661D565348009F354A /* OvoFlickrTechTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OvoFlickrTechTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA0F6771D5653DE009F354A /* SmokeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmokeTest.swift; sourceTree = "<group>"; };
 		7DA0F6841D567460009F354A /* FlickrFeedDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrFeedDataSource.swift; sourceTree = "<group>"; };
+		7DA0F6881D567A85009F354A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7DB0572B1D5614E5009F0078 /* OvoFlickrTechTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OvoFlickrTechTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DB0572E1D5614E5009F0078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DB057301D5614E5009F0078 /* FlickrFeedCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrFeedCollectionViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +158,7 @@
 		7DB057221D5614E5009F0078 = {
 			isa = PBXGroup;
 			children = (
+				7DA0F6881D567A85009F354A /* README.md */,
 				7DB0575C1D561569009F0078 /* Cartfile */,
 				7DB0572D1D5614E5009F0078 /* OvoFlickrTechTest */,
 				7DB057801D56411A009F0078 /* 3rd Party Bundled */,

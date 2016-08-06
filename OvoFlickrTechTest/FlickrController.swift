@@ -12,9 +12,11 @@ import SwiftyJSON
 
 class FlickrController {
     
+    let kEndpointURL = "https://api.flickr.com/services/feeds/photos_public.gne"
+    
     func fetchPublicFeed(successBlock: ([FeedItem]) -> Void, failureBlock: (error: NSError?) -> Void) {
         
-        Alamofire.request(.GET, "https://api.flickr.com/services/feeds/photos_public.gne",
+        Alamofire.request(.GET, kEndpointURL,
             parameters: ["format": "json", "lang": "en-us", "nojsoncallback": "1"])
             .validate()
             .responseString(encoding: NSUTF8StringEncoding) { response in
@@ -43,6 +45,9 @@ class FlickrController {
         }
     }
     
+    /* Flickr periodically spits out invalid JSON which does not validate with popular tools
+     * or parse cleanly with SwiftJSON or NSJSONSerialization.
+     * This substitution cleans up the JSON so it can be parsed correctly. */
     private func sanitizeFlickrsJSON(json: String) -> String {
         return json.stringByReplacingOccurrencesOfString("\\'", withString: "'")
     }
