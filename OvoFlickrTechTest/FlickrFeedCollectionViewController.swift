@@ -11,7 +11,7 @@ import AlamofireImage
 
 class FlickrFeedCollectionViewController: UICollectionViewController {
 
-    private var feedItems = [FeedItem]()
+    private var dataSource: FlickrFeedDataSource!
     
     private lazy var refreshControl: UIRefreshControl = {
         let refresh = UIRefreshControl()
@@ -38,7 +38,7 @@ class FlickrFeedCollectionViewController: UICollectionViewController {
         
         self.flickrController.fetchPublicFeed({ (items) in
             
-            self.feedItems = items
+            self.configureDataSourceWithItems(items)
             self.collectionView?.reloadData()
             self.stopRefreshing()
             
@@ -47,6 +47,11 @@ class FlickrFeedCollectionViewController: UICollectionViewController {
             self.stopRefreshing()
             self.showError(error)
         }
+    }
+    
+    private func configureDataSourceWithItems(items: [FeedItem]) {
+        self.dataSource = FlickrFeedDataSource(feedItems: items)
+        self.collectionView?.dataSource = self.dataSource
     }
     
     private func stopRefreshing() {
@@ -65,38 +70,5 @@ class FlickrFeedCollectionViewController: UICollectionViewController {
         self.collectionView?.addSubview(refreshControl)
         // make pull-to-refresh available even if the feed is empty or displaying too few items to scroll
         self.collectionView?.alwaysBounceVertical = true
-    }
-    
-    private func feedItemForIndexPath(indexPath: NSIndexPath) -> FeedItem? {
-        
-        guard indexPath.row < self.feedItems.count else {
-            return nil
-        }
-        return self.feedItems[indexPath.row]
-    }
-    
-    private func configureCell(cell: FeedItemCollectionViewCell, withItem item: FeedItem) {
-        cell.titleLabel.text = item.title
-        cell.imageView.af_setImageWithURL(item.mediaURL, placeholderImage: nil, imageTransition: .CrossDissolve(0.2))
-        cell.timeAgoLabel.text = item.takenDate.timeAgo()
-    }
-}
-
-extension FlickrFeedCollectionViewController {
-    
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return feedItems.count
-    }
-    
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        
-        guard let cell = self.collectionView!.dequeueReusableCellWithReuseIdentifier("CellId", forIndexPath: indexPath) as? FeedItemCollectionViewCell else {
-            preconditionFailure("Collection view configured with wrong type of cell")
-        }
-        if let item = self.feedItemForIndexPath(indexPath) {
-            configureCell(cell, withItem: item)
-        }
-        
-        return cell
     }
 }
