@@ -35,12 +35,20 @@ class SmokeTest: XCTestCase {
         
         let collectionView = app.otherElements.containingType(.NavigationBar, identifier:"Flickr Public Feed").childrenMatchingType(.Other).element.childrenMatchingType(.Other).element.childrenMatchingType(.Other).element.childrenMatchingType(.CollectionView).element
         
-        for _ in 0...10 {
-            collectionView.swipeUp()
-        }
-        
-        for _ in 0...10 {
-            collectionView.swipeDown()
+        scroll(collectionView, toBottom: true)
+        scroll(collectionView, toBottom: false)
+
+    }
+    
+    let kNumberOfSwipesToBottom = 10
+    
+    private func scroll(collectionView: XCUIElement, toBottom: Bool) {
+        for _ in 0...kNumberOfSwipesToBottom {
+            if toBottom {
+                collectionView.swipeUp()
+            } else {
+                collectionView.swipeDown()
+            }
         }
     }
 }
