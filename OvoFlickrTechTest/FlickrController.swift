@@ -20,10 +20,8 @@ class FlickrController {
                 
                 switch response.result {
                 case .Success(let value):
-                    
-                    let sanitizedJSONString = value.stringByReplacingOccurrencesOfString("\\'", withString: "'")
-                    
-                    guard let dataFromString = sanitizedJSONString.dataUsingEncoding(NSUTF8StringEncoding) else {
+                
+                    guard let dataFromString = self.sanitizeFlickrsJSON(value).dataUsingEncoding(NSUTF8StringEncoding) else {
                         dispatch_async(dispatch_get_main_queue(), {
                             failureBlock(error: nil)
                         })
@@ -42,5 +40,9 @@ class FlickrController {
                     })
                 }
         }
+    }
+    
+    private func sanitizeFlickrsJSON(json: String) -> String {
+        return json.stringByReplacingOccurrencesOfString("\\'", withString: "'")
     }
 }

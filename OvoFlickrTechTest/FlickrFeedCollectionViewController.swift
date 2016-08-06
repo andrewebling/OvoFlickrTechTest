@@ -11,9 +11,9 @@ import AlamofireImage
 
 class FlickrFeedCollectionViewController: UICollectionViewController {
 
-    var feedItems = [FeedItem]()
+    private var feedItems = [FeedItem]()
     
-    lazy var flickrController = {
+    private lazy var flickrController = {
         return FlickrController()
     }()
     
@@ -31,22 +31,6 @@ class FlickrFeedCollectionViewController: UICollectionViewController {
         }
     }
     
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return feedItems.count
-    }
-    
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        
-        guard let cell = self.collectionView!.dequeueReusableCellWithReuseIdentifier("CellId", forIndexPath: indexPath) as? FeedItemCollectionViewCell else {
-            preconditionFailure("Collection view configured with wrong type of cell")
-        }
-        if let item = self.feedItemForIndexPath(indexPath) {
-            configureCell(cell, withItem: item)
-        }
-        
-        return cell
-    }
-    
     private func feedItemForIndexPath(indexPath: NSIndexPath) -> FeedItem? {
         
         guard indexPath.row < self.feedItems.count else {
@@ -62,3 +46,21 @@ class FlickrFeedCollectionViewController: UICollectionViewController {
     }
 }
 
+extension FlickrFeedCollectionViewController {
+    
+    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return feedItems.count
+    }
+    
+    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        
+        guard let cell = self.collectionView!.dequeueReusableCellWithReuseIdentifier("CellId", forIndexPath: indexPath) as? FeedItemCollectionViewCell else {
+            preconditionFailure("Collection view configured with wrong type of cell")
+        }
+        if let item = self.feedItemForIndexPath(indexPath) {
+            configureCell(cell, withItem: item)
+        }
+        
+        return cell
+    }
+}
