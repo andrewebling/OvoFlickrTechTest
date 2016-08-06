@@ -29,5 +29,33 @@ class FlickrFeedCollectionViewController: UICollectionViewController {
                 self.presentViewController(ac, animated: true, completion: nil)
         }
     }
+    
+    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return feedItems.count
+    }
+    
+    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        
+        guard let cell = self.collectionView!.dequeueReusableCellWithReuseIdentifier("CellId", forIndexPath: indexPath) as? FeedItemCollectionViewCell else {
+            preconditionFailure("Collection view configured with wrong type of cell")
+        }
+        if let item = self.feedItemForIndexPath(indexPath) {
+            configureCell(cell, withItem: item)
+        }
+        
+        return cell
+    }
+    
+    private func feedItemForIndexPath(indexPath: NSIndexPath) -> FeedItem? {
+        
+        guard indexPath.row < self.feedItems.count else {
+            return nil
+        }
+        return self.feedItems[indexPath.row]
+    }
+    
+    private func configureCell(cell: FeedItemCollectionViewCell, withItem: FeedItem) {
+        
+    }
 }
 
