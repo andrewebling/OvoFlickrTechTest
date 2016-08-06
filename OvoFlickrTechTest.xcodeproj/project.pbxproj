@@ -47,6 +47,7 @@
 		7DB0574A1D5614E5009F0078 /* OvoFlickrTechTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OvoFlickrTechTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DB0574E1D5614E5009F0078 /* OvoFlickrTechTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvoFlickrTechTestUITests.swift; sourceTree = "<group>"; };
 		7DB057501D5614E5009F0078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DB0575C1D561569009F0078 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 		7DB057221D5614E5009F0078 = {
 			isa = PBXGroup;
 			children = (
+				7DB0575C1D561569009F0078 /* Cartfile */,
 				7DB0572D1D5614E5009F0078 /* OvoFlickrTechTest */,
 				7DB057421D5614E5009F0078 /* OvoFlickrTechTestTests */,
 				7DB0574D1D5614E5009F0078 /* OvoFlickrTechTestUITests */,
@@ -401,6 +403,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = OvoFlickrTechTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.tenero-mobile.OvoFlickrTechTest";
@@ -412,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = OvoFlickrTechTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.tenero-mobile.OvoFlickrTechTest";
