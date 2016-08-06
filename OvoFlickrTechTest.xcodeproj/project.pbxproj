@@ -32,6 +32,9 @@
 		7DB057771D563A13009F0078 /* FeedItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB057761D563A13009F0078 /* FeedItemCollectionViewCell.swift */; };
 		7DB057781D563A13009F0078 /* FeedItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB057761D563A13009F0078 /* FeedItemCollectionViewCell.swift */; };
 		7DB0577A1D563E14009F0078 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB057791D563E14009F0078 /* AlamofireImage.framework */; };
+		7DB0577C1D5640DD009F0078 /* TimeAgoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB0577B1D5640DD009F0078 /* TimeAgoTests.swift */; };
+		7DB0577E1D5640FD009F0078 /* NSDate+timeAgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB0577D1D5640FD009F0078 /* NSDate+timeAgo.swift */; };
+		7DB0577F1D5640FD009F0078 /* NSDate+timeAgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB0577D1D5640FD009F0078 /* NSDate+timeAgo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,8 @@
 		7DB057731D5632C9009F0078 /* FlickrController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrController.swift; sourceTree = "<group>"; };
 		7DB057761D563A13009F0078 /* FeedItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		7DB057791D563E14009F0078 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		7DB0577B1D5640DD009F0078 /* TimeAgoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeAgoTests.swift; sourceTree = "<group>"; };
+		7DB0577D1D5640FD009F0078 /* NSDate+timeAgo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+timeAgo.swift"; path = "OvoFlickrTechTest/NSDate+timeAgo.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +121,7 @@
 				7DB0572D1D5614E5009F0078 /* OvoFlickrTechTest */,
 				7DB057421D5614E5009F0078 /* OvoFlickrTechTestTests */,
 				7DB0574D1D5614E5009F0078 /* OvoFlickrTechTestUITests */,
+				7DB057801D56411A009F0078 /* 3rd Party Bundled */,
 				7DB0576F1D56276E009F0078 /* SwiftyJSON.framework */,
 				7DB0576D1D56276A009F0078 /* Alamofire.framework */,
 				7DB0572C1D5614E5009F0078 /* Products */,
@@ -167,8 +173,17 @@
 			children = (
 				7DB0574E1D5614E5009F0078 /* OvoFlickrTechTestUITests.swift */,
 				7DB057501D5614E5009F0078 /* Info.plist */,
+				7DB0577B1D5640DD009F0078 /* TimeAgoTests.swift */,
 			);
 			path = OvoFlickrTechTestUITests;
+			sourceTree = "<group>";
+		};
+		7DB057801D56411A009F0078 /* 3rd Party Bundled */ = {
+			isa = PBXGroup;
+			children = (
+				7DB0577D1D5640FD009F0078 /* NSDate+timeAgo.swift */,
+			);
+			name = "3rd Party Bundled";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +344,7 @@
 				7DB0576B1D562322009F0078 /* FeedItem.swift in Sources */,
 				7DB057771D563A13009F0078 /* FeedItemCollectionViewCell.swift in Sources */,
 				7DB057681D562292009F0078 /* FeedParser.swift in Sources */,
+				7DB0577E1D5640FD009F0078 /* NSDate+timeAgo.swift in Sources */,
 				7DB057311D5614E5009F0078 /* FlickrFeedCollectionViewController.swift in Sources */,
 				7DB0572F1D5614E5009F0078 /* AppDelegate.swift in Sources */,
 			);
@@ -338,12 +354,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DB0577C1D5640DD009F0078 /* TimeAgoTests.swift in Sources */,
 				7DB057441D5614E5009F0078 /* OvoFlickrTechTestTests.swift in Sources */,
 				7DB0575E1D561A18009F0078 /* FlickrFeedCollectionViewController.swift in Sources */,
 				7DB057781D563A13009F0078 /* FeedItemCollectionViewCell.swift in Sources */,
 				7DB0576C1D562322009F0078 /* FeedItem.swift in Sources */,
 				7DB057641D561E3B009F0078 /* JSONIntegrationTest.swift in Sources */,
 				7DB057751D5632C9009F0078 /* FlickrController.swift in Sources */,
+				7DB0577F1D5640FD009F0078 /* NSDate+timeAgo.swift in Sources */,
 				7DB057621D561DF9009F0078 /* FeedParserTests.swift in Sources */,
 				7DB057691D562292009F0078 /* FeedParser.swift in Sources */,
 			);

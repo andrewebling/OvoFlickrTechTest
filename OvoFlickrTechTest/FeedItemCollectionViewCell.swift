@@ -10,11 +10,15 @@ import UIKit
 
 class FeedItemCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var timeAgoLabel: UILabel!
     
     override func prepareForReuse() {
         super.prepareForReuse()
         
+        self.titleLabel.text = ""
         self.imageView.image = nil
+        self.timeAgoLabel.text = ""
     }
 }
