@@ -30,11 +30,17 @@ class SmokeTest: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testSmokeTest() {
         
         
         let collectionView = app.otherElements.containingType(.NavigationBar, identifier:"Flickr Public Feed").childrenMatchingType(.Other).element.childrenMatchingType(.Other).element.childrenMatchingType(.Other).element.childrenMatchingType(.CollectionView).element
         
-        collectionView.swipeUp()
+        for _ in 0...10 {
+            collectionView.swipeUp()
+        }
+        
+        for _ in 0...10 {
+            collectionView.swipeDown()
+        }
     }
 }
