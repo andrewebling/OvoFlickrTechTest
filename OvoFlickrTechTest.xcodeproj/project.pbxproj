@@ -7,13 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DA0F6601D56517F009F354A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB0576D1D56276A009F0078 /* Alamofire.framework */; };
+		7DA0F6611D56517F009F354A /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB057791D563E14009F0078 /* AlamofireImage.framework */; };
+		7DA0F6701D565368009F354A /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB0576A1D562321009F0078 /* FeedItem.swift */; };
+		7DA0F6711D56536C009F354A /* FeedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB057671D562292009F0078 /* FeedParser.swift */; };
+		7DA0F6721D56536F009F354A /* FeedItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB057761D563A13009F0078 /* FeedItemCollectionViewCell.swift */; };
+		7DA0F6731D565372009F354A /* FlickrController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB057731D5632C9009F0078 /* FlickrController.swift */; };
+		7DA0F6741D565375009F354A /* FlickrFeedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB057301D5614E5009F0078 /* FlickrFeedCollectionViewController.swift */; };
+		7DA0F6751D565379009F354A /* NSDate+timeAgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB0577D1D5640FD009F0078 /* NSDate+timeAgo.swift */; };
+		7DA0F6781D5653DE009F354A /* SmokeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA0F6771D5653DE009F354A /* SmokeTest.swift */; };
+		7DA0F6791D5653FD009F354A /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB0576F1D56276E009F0078 /* SwiftyJSON.framework */; };
+		7DA0F67A1D565400009F354A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB0576D1D56276A009F0078 /* Alamofire.framework */; };
+		7DA0F67B1D565403009F354A /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB057791D563E14009F0078 /* AlamofireImage.framework */; };
+		7DA0F67D1D565665009F354A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DB057321D5614E5009F0078 /* Main.storyboard */; };
+		7DA0F67E1D565672009F354A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DB057371D5614E5009F0078 /* LaunchScreen.storyboard */; };
+		7DA0F6811D565919009F354A /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB0576F1D56276E009F0078 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7DA0F6821D565919009F354A /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB0576D1D56276A009F0078 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7DA0F6831D565919009F354A /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB057791D563E14009F0078 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7DB0572F1D5614E5009F0078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB0572E1D5614E5009F0078 /* AppDelegate.swift */; };
 		7DB057311D5614E5009F0078 /* FlickrFeedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB057301D5614E5009F0078 /* FlickrFeedCollectionViewController.swift */; };
 		7DB057341D5614E5009F0078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DB057321D5614E5009F0078 /* Main.storyboard */; };
 		7DB057361D5614E5009F0078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DB057351D5614E5009F0078 /* Assets.xcassets */; };
 		7DB057391D5614E5009F0078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DB057371D5614E5009F0078 /* LaunchScreen.storyboard */; };
 		7DB057441D5614E5009F0078 /* OvoFlickrTechTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB057431D5614E5009F0078 /* OvoFlickrTechTestTests.swift */; };
-		7DB0574F1D5614E5009F0078 /* OvoFlickrTechTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB0574E1D5614E5009F0078 /* OvoFlickrTechTestUITests.swift */; };
 		7DB0575D1D56198B009F0078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DB057321D5614E5009F0078 /* Main.storyboard */; };
 		7DB0575E1D561A18009F0078 /* FlickrFeedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB057301D5614E5009F0078 /* FlickrFeedCollectionViewController.swift */; };
 		7DB057601D561D62009F0078 /* feed-test-fixture.json in Resources */ = {isa = PBXBuildFile; fileRef = 7DB0575F1D561D62009F0078 /* feed-test-fixture.json */; };
@@ -38,14 +54,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7DB057401D5614E5009F0078 /* PBXContainerItemProxy */ = {
+		7DA0F66B1D565348009F354A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7DB057231D5614E5009F0078 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7DB0572A1D5614E5009F0078;
 			remoteInfo = OvoFlickrTechTest;
 		};
-		7DB0574B1D5614E5009F0078 /* PBXContainerItemProxy */ = {
+		7DB057401D5614E5009F0078 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7DB057231D5614E5009F0078 /* Project object */;
 			proxyType = 1;
@@ -54,7 +70,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7DA0F6801D565905009F354A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7DA0F6811D565919009F354A /* SwiftyJSON.framework in Embed Frameworks */,
+				7DA0F6821D565919009F354A /* Alamofire.framework in Embed Frameworks */,
+				7DA0F6831D565919009F354A /* AlamofireImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7DA0F6661D565348009F354A /* OvoFlickrTechTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OvoFlickrTechTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DA0F6771D5653DE009F354A /* SmokeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmokeTest.swift; sourceTree = "<group>"; };
 		7DB0572B1D5614E5009F0078 /* OvoFlickrTechTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OvoFlickrTechTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DB0572E1D5614E5009F0078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DB057301D5614E5009F0078 /* FlickrFeedCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrFeedCollectionViewController.swift; sourceTree = "<group>"; };
@@ -65,8 +99,6 @@
 		7DB0573F1D5614E5009F0078 /* OvoFlickrTechTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OvoFlickrTechTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DB057431D5614E5009F0078 /* OvoFlickrTechTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvoFlickrTechTestTests.swift; sourceTree = "<group>"; };
 		7DB057451D5614E5009F0078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7DB0574A1D5614E5009F0078 /* OvoFlickrTechTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OvoFlickrTechTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7DB0574E1D5614E5009F0078 /* OvoFlickrTechTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvoFlickrTechTestUITests.swift; sourceTree = "<group>"; };
 		7DB057501D5614E5009F0078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DB0575C1D561569009F0078 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		7DB0575F1D561D62009F0078 /* feed-test-fixture.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "feed-test-fixture.json"; sourceTree = "<group>"; };
@@ -80,11 +112,21 @@
 		7DB057731D5632C9009F0078 /* FlickrController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrController.swift; sourceTree = "<group>"; };
 		7DB057761D563A13009F0078 /* FeedItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		7DB057791D563E14009F0078 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
-		7DB0577B1D5640DD009F0078 /* TimeAgoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeAgoTests.swift; sourceTree = "<group>"; };
+		7DB0577B1D5640DD009F0078 /* TimeAgoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeAgoTests.swift; path = ../OvoFlickrTechTestUITests/TimeAgoTests.swift; sourceTree = "<group>"; };
 		7DB0577D1D5640FD009F0078 /* NSDate+timeAgo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+timeAgo.swift"; path = "OvoFlickrTechTest/NSDate+timeAgo.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7DA0F6631D565348009F354A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DA0F6791D5653FD009F354A /* SwiftyJSON.framework in Frameworks */,
+				7DA0F67A1D565400009F354A /* Alamofire.framework in Frameworks */,
+				7DA0F67B1D565403009F354A /* AlamofireImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7DB057281D5614E5009F0078 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -99,14 +141,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DA0F6601D56517F009F354A /* Alamofire.framework in Frameworks */,
+				7DA0F6611D56517F009F354A /* AlamofireImage.framework in Frameworks */,
 				7DB057721D56299E009F0078 /* SwiftyJSON.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7DB057471D5614E5009F0078 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +170,7 @@
 			children = (
 				7DB0572B1D5614E5009F0078 /* OvoFlickrTechTest.app */,
 				7DB0573F1D5614E5009F0078 /* OvoFlickrTechTestTests.xctest */,
-				7DB0574A1D5614E5009F0078 /* OvoFlickrTechTestUITests.xctest */,
+				7DA0F6661D565348009F354A /* OvoFlickrTechTestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,6 +193,7 @@
 		7DB057421D5614E5009F0078 /* OvoFlickrTechTestTests */ = {
 			isa = PBXGroup;
 			children = (
+				7DB0577B1D5640DD009F0078 /* TimeAgoTests.swift */,
 				7DB057631D561E3B009F0078 /* JSONIntegrationTest.swift */,
 				7DB057611D561DF9009F0078 /* FeedParserTests.swift */,
 				7DB057431D5614E5009F0078 /* OvoFlickrTechTestTests.swift */,
@@ -169,9 +207,8 @@
 		7DB0574D1D5614E5009F0078 /* OvoFlickrTechTestUITests */ = {
 			isa = PBXGroup;
 			children = (
-				7DB0574E1D5614E5009F0078 /* OvoFlickrTechTestUITests.swift */,
 				7DB057501D5614E5009F0078 /* Info.plist */,
-				7DB0577B1D5640DD009F0078 /* TimeAgoTests.swift */,
+				7DA0F6771D5653DE009F354A /* SmokeTest.swift */,
 			);
 			path = OvoFlickrTechTestUITests;
 			sourceTree = "<group>";
@@ -214,6 +251,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7DA0F6651D565348009F354A /* OvoFlickrTechTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DA0F66D1D565348009F354A /* Build configuration list for PBXNativeTarget "OvoFlickrTechTestUITests" */;
+			buildPhases = (
+				7DA0F6621D565348009F354A /* Sources */,
+				7DA0F6631D565348009F354A /* Frameworks */,
+				7DA0F6641D565348009F354A /* Resources */,
+				7DA0F67C1D56559E009F354A /* ShellScript */,
+				7DA0F6801D565905009F354A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DA0F66C1D565348009F354A /* PBXTargetDependency */,
+			);
+			name = OvoFlickrTechTestUITests;
+			productName = OvoFlickrTechTestUITests;
+			productReference = 7DA0F6661D565348009F354A /* OvoFlickrTechTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		7DB0572A1D5614E5009F0078 /* OvoFlickrTechTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DB057531D5614E5009F0078 /* Build configuration list for PBXNativeTarget "OvoFlickrTechTest" */;
@@ -250,24 +307,6 @@
 			productReference = 7DB0573F1D5614E5009F0078 /* OvoFlickrTechTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7DB057491D5614E5009F0078 /* OvoFlickrTechTestUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7DB057591D5614E5009F0078 /* Build configuration list for PBXNativeTarget "OvoFlickrTechTestUITests" */;
-			buildPhases = (
-				7DB057461D5614E5009F0078 /* Sources */,
-				7DB057471D5614E5009F0078 /* Frameworks */,
-				7DB057481D5614E5009F0078 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7DB0574C1D5614E5009F0078 /* PBXTargetDependency */,
-			);
-			name = OvoFlickrTechTestUITests;
-			productName = OvoFlickrTechTestUITests;
-			productReference = 7DB0574A1D5614E5009F0078 /* OvoFlickrTechTestUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -278,14 +317,14 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Tenero;
 				TargetAttributes = {
+					7DA0F6651D565348009F354A = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 7DB0572A1D5614E5009F0078;
+					};
 					7DB0572A1D5614E5009F0078 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					7DB0573E1D5614E5009F0078 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 7DB0572A1D5614E5009F0078;
-					};
-					7DB057491D5614E5009F0078 = {
 						CreatedOnToolsVersion = 7.3.1;
 						TestTargetID = 7DB0572A1D5614E5009F0078;
 					};
@@ -306,12 +345,21 @@
 			targets = (
 				7DB0572A1D5614E5009F0078 /* OvoFlickrTechTest */,
 				7DB0573E1D5614E5009F0078 /* OvoFlickrTechTestTests */,
-				7DB057491D5614E5009F0078 /* OvoFlickrTechTestUITests */,
+				7DA0F6651D565348009F354A /* OvoFlickrTechTestUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7DA0F6641D565348009F354A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DA0F67D1D565665009F354A /* Main.storyboard in Resources */,
+				7DA0F67E1D565672009F354A /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7DB057291D5614E5009F0078 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -332,16 +380,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DB057481D5614E5009F0078 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		7DA0F67C1D56559E009F354A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
 		7DB057711D56279F009F0078 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -361,6 +418,20 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7DA0F6621D565348009F354A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DA0F6731D565372009F354A /* FlickrController.swift in Sources */,
+				7DA0F6741D565375009F354A /* FlickrFeedCollectionViewController.swift in Sources */,
+				7DA0F6711D56536C009F354A /* FeedParser.swift in Sources */,
+				7DA0F6781D5653DE009F354A /* SmokeTest.swift in Sources */,
+				7DA0F6701D565368009F354A /* FeedItem.swift in Sources */,
+				7DA0F6751D565379009F354A /* NSDate+timeAgo.swift in Sources */,
+				7DA0F6721D56536F009F354A /* FeedItemCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7DB057271D5614E5009F0078 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -392,26 +463,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DB057461D5614E5009F0078 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7DB0574F1D5614E5009F0078 /* OvoFlickrTechTestUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7DA0F66C1D565348009F354A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DB0572A1D5614E5009F0078 /* OvoFlickrTechTest */;
+			targetProxy = 7DA0F66B1D565348009F354A /* PBXContainerItemProxy */;
+		};
 		7DB057411D5614E5009F0078 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7DB0572A1D5614E5009F0078 /* OvoFlickrTechTest */;
 			targetProxy = 7DB057401D5614E5009F0078 /* PBXContainerItemProxy */;
-		};
-		7DB0574C1D5614E5009F0078 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7DB0572A1D5614E5009F0078 /* OvoFlickrTechTest */;
-			targetProxy = 7DB0574B1D5614E5009F0078 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -435,6 +498,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7DA0F66E1D565348009F354A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = OvoFlickrTechTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.tenero-mobile.OvoFlickrTechTestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OvoFlickrTechTest;
+			};
+			name = Debug;
+		};
+		7DA0F66F1D565348009F354A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = OvoFlickrTechTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.tenero-mobile.OvoFlickrTechTestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OvoFlickrTechTest;
+			};
+			name = Release;
+		};
 		7DB057511D5614E5009F0078 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -584,31 +677,17 @@
 			};
 			name = Release;
 		};
-		7DB0575A1D5614E5009F0078 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = OvoFlickrTechTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.tenero-mobile.OvoFlickrTechTestUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = OvoFlickrTechTest;
-			};
-			name = Debug;
-		};
-		7DB0575B1D5614E5009F0078 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = OvoFlickrTechTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.tenero-mobile.OvoFlickrTechTestUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = OvoFlickrTechTest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7DA0F66D1D565348009F354A /* Build configuration list for PBXNativeTarget "OvoFlickrTechTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DA0F66E1D565348009F354A /* Debug */,
+				7DA0F66F1D565348009F354A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		7DB057261D5614E5009F0078 /* Build configuration list for PBXProject "OvoFlickrTechTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -625,6 +704,7 @@
 				7DB057551D5614E5009F0078 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7DB057561D5614E5009F0078 /* Build configuration list for PBXNativeTarget "OvoFlickrTechTestTests" */ = {
 			isa = XCConfigurationList;
@@ -633,14 +713,7 @@
 				7DB057581D5614E5009F0078 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		7DB057591D5614E5009F0078 /* Build configuration list for PBXNativeTarget "OvoFlickrTechTestUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7DB0575A1D5614E5009F0078 /* Debug */,
-				7DB0575B1D5614E5009F0078 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,6 +1,6 @@
 //
-//  OvoFlickrTechTestUITests.swift
-//  OvoFlickrTechTestUITests
+//  SmokeTest.swift
+//  OvoFlickrTechTest
 //
 //  Created by Andrew Ebling on 06/08/2016.
 //  Copyright © 2016 Tenero. All rights reserved.
@@ -8,8 +8,10 @@
 
 import XCTest
 
-class OvoFlickrTechTestUITests: XCTestCase {
-        
+class SmokeTest: XCTestCase {
+    
+    let app = XCUIApplication()
+    
     override func setUp() {
         super.setUp()
         
@@ -18,7 +20,7 @@ class OvoFlickrTechTestUITests: XCTestCase {
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
         // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        XCUIApplication().launch()
+        app.launch()
 
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
@@ -29,8 +31,10 @@ class OvoFlickrTechTestUITests: XCTestCase {
     }
     
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        
+        let collectionView = app.otherElements.containingType(.NavigationBar, identifier:"Flickr Public Feed").childrenMatchingType(.Other).element.childrenMatchingType(.Other).element.childrenMatchingType(.Other).element.childrenMatchingType(.CollectionView).element
+        
+        collectionView.swipeUp()
     }
-    
 }

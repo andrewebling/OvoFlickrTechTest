@@ -39,10 +39,10 @@
             </BuildableReference>
          </TestableReference>
          <TestableReference
-            skipped = "YES">
+            skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7DB057491D5614E5009F0078"
+               BlueprintIdentifier = "7DA0F6651D565348009F354A"
                BuildableName = "OvoFlickrTechTestUITests.xctest"
                BlueprintName = "OvoFlickrTechTestUITests"
                ReferencedContainer = "container:OvoFlickrTechTest.xcodeproj">
