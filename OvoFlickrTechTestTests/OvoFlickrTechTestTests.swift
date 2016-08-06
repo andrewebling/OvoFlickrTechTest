@@ -9,11 +9,14 @@
 import XCTest
 @testable import OvoFlickrTechTest
 
-class OvoFlickrTechTestTests: XCTestCase {
+class FlickrFeedCollectionViewControllerTests: XCTestCase {
+    
+    var storyboard: UIStoryboard!
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        self.storyboard = UIStoryboard(name: "Main", bundle: NSBundle(forClass: self.dynamicType))
     }
     
     override func tearDown() {
@@ -21,16 +24,16 @@ class OvoFlickrTechTestTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
+    func testStoryboardInstantiatesNavigationAndFlickrFeedCollectionViewController() {
+        
+        guard let navigationController = self.storyboard.instantiateInitialViewController() as? UINavigationController else {
+            XCTFail("Did not find a navigation controller as the root view controller in storyboard")
+            return
+        }
+        
+        guard let _ = navigationController.topViewController as? FlickrFeedCollectionViewController else {
+            XCTFail("Did not find an instance of FlickrFeedCollectionViewController as the navigationController's topViewController")
+            return
         }
     }
-    
 }
