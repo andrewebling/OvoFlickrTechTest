@@ -10,9 +10,24 @@ import UIKit
 
 class FlickrFeedCollectionViewController: UICollectionViewController {
 
+    var feedItems = [FeedItem]()
+    
+    lazy var flickrController = {
+        return FlickrController()
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.flickrController.fetchPublicFeed({ (items) in
+                self.feedItems = items
+                self.collectionView?.reloadData()
+            }) { (error) in
+                let ac = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .Alert)
+                let ok = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+                ac.addAction(ok)
+                self.presentViewController(ac, animated: true, completion: nil)
+        }
     }
 }
 
