@@ -10,20 +10,17 @@ import Foundation
 import SwiftyJSON
 
 class FeedParser {
-    private static var token: dispatch_once_t = 0
-    private static var dateFormatter: NSDateFormatter!
     
-    class var jsonDateFormatter: NSDateFormatter  {
-        get {
-            // Date formatters are expensive - do this only once
-            dispatch_once(&token) {
-                dateFormatter = NSDateFormatter()
-                dateFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
-                dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
-            }
-            return dateFormatter
-        }
-    }
+    private static let kFlickrDateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+    
+    static let jsonDateFormatter: NSDateFormatter = {
+        
+        let dateFormatter = NSDateFormatter()
+        // set locale to prevent user time/date format preferences from breaking this
+        dateFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
+        dateFormatter.dateFormat = kFlickrDateFormat
+        return dateFormatter
+    }()
     
     static func singleFeedItemFromJSON(json: JSON) -> FeedItem {
         
