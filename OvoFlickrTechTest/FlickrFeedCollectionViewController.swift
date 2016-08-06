@@ -40,12 +40,18 @@ class FlickrFeedCollectionViewController: UICollectionViewController {
             
             self.feedItems = items
             self.collectionView?.reloadData()
-            self.refreshControl.endRefreshing()
+            self.stopRefreshing()
             
         }) { (error) in
             
-            self.refreshControl.endRefreshing()
+            self.stopRefreshing()
             self.showError(error)
+        }
+    }
+    
+    private func stopRefreshing() {
+        if self.refreshControl.refreshing {
+            self.refreshControl.endRefreshing()
         }
     }
     
