@@ -57,7 +57,7 @@ class FlickrFeedCollectionViewController: UICollectionViewController {
     
     private func configureCell(cell: FeedItemCollectionViewCell, withItem item: FeedItem) {
         cell.titleLabel.text = item.title
-        cell.imageView.af_setImageWithURL(item.mediaURL)
+        cell.imageView.af_setImageWithURL(item.mediaURL, placeholderImage: nil, imageTransition: .CrossDissolve(0.2))
         cell.timeAgoLabel.text = item.takenDate.timeAgo()
     }
 }

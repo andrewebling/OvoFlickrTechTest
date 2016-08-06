@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Root View Controller-->
@@ -57,7 +58,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="VaN-hR-d06">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.91098420516304346" green="0.91098420516304346" blue="0.91098420516304346" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HpY-IE-P5Q">
                             <size key="itemSize" width="320" height="283"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -72,24 +73,37 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="283"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEE-HZ-Xsh">
-                                            <rect key="frame" x="8" y="229" width="304" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEE-HZ-Xsh">
+                                            <rect key="frame" x="8" y="238" width="304" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nyj-cS-9BK">
-                                            <rect key="frame" x="8" y="249" width="304" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nyj-cS-9BK">
+                                            <rect key="frame" x="8" y="261" width="304" height="12"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                             <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FMU-21-xwc">
-                                            <rect key="frame" x="8" y="14" width="304" height="202"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FMU-21-xwc">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="230"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="FEE-HZ-Xsh" secondAttribute="trailing" id="1Ka-Hr-x87"/>
+                                    <constraint firstItem="FMU-21-xwc" firstAttribute="top" secondItem="yw3-CY-J0w" secondAttribute="topMargin" constant="-8" id="6Lo-IL-85k"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="FMU-21-xwc" secondAttribute="trailing" constant="-8" id="FGg-s9-JeF"/>
+                                    <constraint firstAttribute="leadingMargin" secondItem="FEE-HZ-Xsh" secondAttribute="leading" id="Mcg-59-FD0"/>
+                                    <constraint firstItem="Nyj-cS-9BK" firstAttribute="top" secondItem="FEE-HZ-Xsh" secondAttribute="bottom" constant="2" id="NaA-GH-Afn"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Nyj-cS-9BK" secondAttribute="trailing" id="VDb-sg-7jS"/>
+                                    <constraint firstAttribute="leadingMargin" secondItem="Nyj-cS-9BK" secondAttribute="leading" id="oye-3y-BkR"/>
+                                    <constraint firstItem="FMU-21-xwc" firstAttribute="leading" secondItem="yw3-CY-J0w" secondAttribute="leadingMargin" constant="-8" id="x23-w3-IlV"/>
+                                    <constraint firstItem="FEE-HZ-Xsh" firstAttribute="top" secondItem="FMU-21-xwc" secondAttribute="bottom" constant="8" id="yoI-CS-6Ov"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="Nyj-cS-9BK" secondAttribute="bottom" constant="2" id="zzE-vW-G3B"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="imageView" destination="FMU-21-xwc" id="6Qc-l6-fgp"/>
                                     <outlet property="timeAgoLabel" destination="Nyj-cS-9BK" id="sxh-A3-cL4"/>
