@@ -13,6 +13,7 @@ import SwiftyJSON
 class FlickrController {
     
     func fetchPublicFeed(successBlock: ([FeedItem]) -> Void, failureBlock: (error: NSError?) -> Void) {
+        
         Alamofire.request(.GET, "https://api.flickr.com/services/feeds/photos_public.gne",
             parameters: ["format": "json", "lang": "en-us", "nojsoncallback": "1"])
             .validate()
@@ -23,7 +24,7 @@ class FlickrController {
                 
                     guard let dataFromString = self.sanitizeFlickrsJSON(value).dataUsingEncoding(NSUTF8StringEncoding) else {
                         dispatch_async(dispatch_get_main_queue(), {
-                            failureBlock(error: nil)
+                            failureBlock(error: NSError(domain: "Could not load data", code: 0, userInfo: nil))
                         })
                         return
                     }
