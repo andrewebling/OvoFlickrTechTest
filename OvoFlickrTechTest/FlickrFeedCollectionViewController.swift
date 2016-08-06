@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class FlickrFeedCollectionViewController: UICollectionViewController {
 
@@ -54,8 +55,8 @@ class FlickrFeedCollectionViewController: UICollectionViewController {
         return self.feedItems[indexPath.row]
     }
     
-    private func configureCell(cell: FeedItemCollectionViewCell, withItem: FeedItem) {
-        
+    private func configureCell(cell: FeedItemCollectionViewCell, withItem item: FeedItem) {
+        cell.imageView.af_setImageWithURL(item.mediaURL)
     }
 }
 

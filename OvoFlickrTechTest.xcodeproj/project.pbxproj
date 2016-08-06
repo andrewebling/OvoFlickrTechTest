@@ -31,6 +31,7 @@
 		7DB057751D5632C9009F0078 /* FlickrController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB057731D5632C9009F0078 /* FlickrController.swift */; };
 		7DB057771D563A13009F0078 /* FeedItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB057761D563A13009F0078 /* FeedItemCollectionViewCell.swift */; };
 		7DB057781D563A13009F0078 /* FeedItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB057761D563A13009F0078 /* FeedItemCollectionViewCell.swift */; };
+		7DB0577A1D563E14009F0078 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB057791D563E14009F0078 /* AlamofireImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		7DB0576F1D56276E009F0078 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		7DB057731D5632C9009F0078 /* FlickrController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrController.swift; sourceTree = "<group>"; };
 		7DB057761D563A13009F0078 /* FeedItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		7DB057791D563E14009F0078 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			files = (
 				7DB0576E1D56276A009F0078 /* Alamofire.framework in Frameworks */,
 				7DB057701D56276E009F0078 /* SwiftyJSON.framework in Frameworks */,
+				7DB0577A1D563E14009F0078 /* AlamofireImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +111,7 @@
 		7DB057221D5614E5009F0078 = {
 			isa = PBXGroup;
 			children = (
+				7DB057791D563E14009F0078 /* AlamofireImage.framework */,
 				7DB0575C1D561569009F0078 /* Cartfile */,
 				7DB0572D1D5614E5009F0078 /* OvoFlickrTechTest */,
 				7DB057421D5614E5009F0078 /* OvoFlickrTechTestTests */,
@@ -306,6 +310,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
 			);
 			outputPaths = (
 			);
