@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7DB0572F1D5614E5009F0078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB0572E1D5614E5009F0078 /* AppDelegate.swift */; };
+		7DB057311D5614E5009F0078 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB057301D5614E5009F0078 /* ViewController.swift */; };
+		7DB057341D5614E5009F0078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DB057321D5614E5009F0078 /* Main.storyboard */; };
+		7DB057361D5614E5009F0078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DB057351D5614E5009F0078 /* Assets.xcassets */; };
+		7DB057391D5614E5009F0078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DB057371D5614E5009F0078 /* LaunchScreen.storyboard */; };
+		7DB057441D5614E5009F0078 /* OvoFlickrTechTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB057431D5614E5009F0078 /* OvoFlickrTechTestTests.swift */; };
+		7DB0574F1D5614E5009F0078 /* OvoFlickrTechTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB0574E1D5614E5009F0078 /* OvoFlickrTechTestUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7DB057401D5614E5009F0078 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DB057231D5614E5009F0078 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DB0572A1D5614E5009F0078;
+			remoteInfo = OvoFlickrTechTest;
+		};
+		7DB0574B1D5614E5009F0078 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DB057231D5614E5009F0078 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DB0572A1D5614E5009F0078;
+			remoteInfo = OvoFlickrTechTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7DB0572B1D5614E5009F0078 /* OvoFlickrTechTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OvoFlickrTechTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DB0572E1D5614E5009F0078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7DB057301D5614E5009F0078 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7DB057331D5614E5009F0078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7DB057351D5614E5009F0078 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7DB057381D5614E5009F0078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7DB0573A1D5614E5009F0078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DB0573F1D5614E5009F0078 /* OvoFlickrTechTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OvoFlickrTechTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DB057431D5614E5009F0078 /* OvoFlickrTechTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvoFlickrTechTestTests.swift; sourceTree = "<group>"; };
+		7DB057451D5614E5009F0078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DB0574A1D5614E5009F0078 /* OvoFlickrTechTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OvoFlickrTechTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DB0574E1D5614E5009F0078 /* OvoFlickrTechTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvoFlickrTechTestUITests.swift; sourceTree = "<group>"; };
+		7DB057501D5614E5009F0078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DB057281D5614E5009F0078 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DB0573C1D5614E5009F0078 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DB057471D5614E5009F0078 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7DB057221D5614E5009F0078 = {
+			isa = PBXGroup;
+			children = (
+				7DB0572D1D5614E5009F0078 /* OvoFlickrTechTest */,
+				7DB057421D5614E5009F0078 /* OvoFlickrTechTestTests */,
+				7DB0574D1D5614E5009F0078 /* OvoFlickrTechTestUITests */,
+				7DB0572C1D5614E5009F0078 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7DB0572C1D5614E5009F0078 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DB0572B1D5614E5009F0078 /* OvoFlickrTechTest.app */,
+				7DB0573F1D5614E5009F0078 /* OvoFlickrTechTestTests.xctest */,
+				7DB0574A1D5614E5009F0078 /* OvoFlickrTechTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB0572D1D5614E5009F0078 /* OvoFlickrTechTest */ = {
+			isa = PBXGroup;
+			children = (
+				7DB0572E1D5614E5009F0078 /* AppDelegate.swift */,
+				7DB057301D5614E5009F0078 /* ViewController.swift */,
+				7DB057321D5614E5009F0078 /* Main.storyboard */,
+				7DB057351D5614E5009F0078 /* Assets.xcassets */,
+				7DB057371D5614E5009F0078 /* LaunchScreen.storyboard */,
+				7DB0573A1D5614E5009F0078 /* Info.plist */,
+			);
+			path = OvoFlickrTechTest;
+			sourceTree = "<group>";
+		};
+		7DB057421D5614E5009F0078 /* OvoFlickrTechTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				7DB057431D5614E5009F0078 /* OvoFlickrTechTestTests.swift */,
+				7DB057451D5614E5009F0078 /* Info.plist */,
+			);
+			path = OvoFlickrTechTestTests;
+			sourceTree = "<group>";
+		};
+		7DB0574D1D5614E5009F0078 /* OvoFlickrTechTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7DB0574E1D5614E5009F0078 /* OvoFlickrTechTestUITests.swift */,
+				7DB057501D5614E5009F0078 /* Info.plist */,
+			);
+			path = OvoFlickrTechTestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DB0572A1D5614E5009F0078 /* OvoFlickrTechTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DB057531D5614E5009F0078 /* Build configuration list for PBXNativeTarget "OvoFlickrTechTest" */;
+			buildPhases = (
+				7DB057271D5614E5009F0078 /* Sources */,
+				7DB057281D5614E5009F0078 /* Frameworks */,
+				7DB057291D5614E5009F0078 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OvoFlickrTechTest;
+			productName = OvoFlickrTechTest;
+			productReference = 7DB0572B1D5614E5009F0078 /* OvoFlickrTechTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7DB0573E1D5614E5009F0078 /* OvoFlickrTechTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DB057561D5614E5009F0078 /* Build configuration list for PBXNativeTarget "OvoFlickrTechTestTests" */;
+			buildPhases = (
+				7DB0573B1D5614E5009F0078 /* Sources */,
+				7DB0573C1D5614E5009F0078 /* Frameworks */,
+				7DB0573D1D5614E5009F0078 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DB057411D5614E5009F0078 /* PBXTargetDependency */,
+			);
+			name = OvoFlickrTechTestTests;
+			productName = OvoFlickrTechTestTests;
+			productReference = 7DB0573F1D5614E5009F0078 /* OvoFlickrTechTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7DB057491D5614E5009F0078 /* OvoFlickrTechTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DB057591D5614E5009F0078 /* Build configuration list for PBXNativeTarget "OvoFlickrTechTestUITests" */;
+			buildPhases = (
+				7DB057461D5614E5009F0078 /* Sources */,
+				7DB057471D5614E5009F0078 /* Frameworks */,
+				7DB057481D5614E5009F0078 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DB0574C1D5614E5009F0078 /* PBXTargetDependency */,
+			);
+			name = OvoFlickrTechTestUITests;
+			productName = OvoFlickrTechTestUITests;
+			productReference = 7DB0574A1D5614E5009F0078 /* OvoFlickrTechTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7DB057231D5614E5009F0078 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Tenero;
+				TargetAttributes = {
+					7DB0572A1D5614E5009F0078 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					7DB0573E1D5614E5009F0078 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 7DB0572A1D5614E5009F0078;
+					};
+					7DB057491D5614E5009F0078 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 7DB0572A1D5614E5009F0078;
+					};
+				};
+			};
+			buildConfigurationList = 7DB057261D5614E5009F0078 /* Build configuration list for PBXProject "OvoFlickrTechTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7DB057221D5614E5009F0078;
+			productRefGroup = 7DB0572C1D5614E5009F0078 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DB0572A1D5614E5009F0078 /* OvoFlickrTechTest */,
+				7DB0573E1D5614E5009F0078 /* OvoFlickrTechTestTests */,
+				7DB057491D5614E5009F0078 /* OvoFlickrTechTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7DB057291D5614E5009F0078 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DB057391D5614E5009F0078 /* LaunchScreen.storyboard in Resources */,
+				7DB057361D5614E5009F0078 /* Assets.xcassets in Resources */,
+				7DB057341D5614E5009F0078 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DB0573D1D5614E5009F0078 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DB057481D5614E5009F0078 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7DB057271D5614E5009F0078 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DB057311D5614E5009F0078 /* ViewController.swift in Sources */,
+				7DB0572F1D5614E5009F0078 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DB0573B1D5614E5009F0078 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DB057441D5614E5009F0078 /* OvoFlickrTechTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DB057461D5614E5009F0078 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DB0574F1D5614E5009F0078 /* OvoFlickrTechTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7DB057411D5614E5009F0078 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DB0572A1D5614E5009F0078 /* OvoFlickrTechTest */;
+			targetProxy = 7DB057401D5614E5009F0078 /* PBXContainerItemProxy */;
+		};
+		7DB0574C1D5614E5009F0078 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DB0572A1D5614E5009F0078 /* OvoFlickrTechTest */;
+			targetProxy = 7DB0574B1D5614E5009F0078 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7DB057321D5614E5009F0078 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DB057331D5614E5009F0078 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7DB057371D5614E5009F0078 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DB057381D5614E5009F0078 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7DB057511D5614E5009F0078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7DB057521D5614E5009F0078 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7DB057541D5614E5009F0078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OvoFlickrTechTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.tenero-mobile.OvoFlickrTechTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7DB057551D5614E5009F0078 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OvoFlickrTechTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.tenero-mobile.OvoFlickrTechTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7DB057571D5614E5009F0078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OvoFlickrTechTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.tenero-mobile.OvoFlickrTechTestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OvoFlickrTechTest.app/OvoFlickrTechTest";
+			};
+			name = Debug;
+		};
+		7DB057581D5614E5009F0078 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OvoFlickrTechTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.tenero-mobile.OvoFlickrTechTestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OvoFlickrTechTest.app/OvoFlickrTechTest";
+			};
+			name = Release;
+		};
+		7DB0575A1D5614E5009F0078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OvoFlickrTechTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.tenero-mobile.OvoFlickrTechTestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OvoFlickrTechTest;
+			};
+			name = Debug;
+		};
+		7DB0575B1D5614E5009F0078 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OvoFlickrTechTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.tenero-mobile.OvoFlickrTechTestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OvoFlickrTechTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DB057261D5614E5009F0078 /* Build configuration list for PBXProject "OvoFlickrTechTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DB057511D5614E5009F0078 /* Debug */,
+				7DB057521D5614E5009F0078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DB057531D5614E5009F0078 /* Build configuration list for PBXNativeTarget "OvoFlickrTechTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DB057541D5614E5009F0078 /* Debug */,
+				7DB057551D5614E5009F0078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7DB057561D5614E5009F0078 /* Build configuration list for PBXNativeTarget "OvoFlickrTechTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DB057571D5614E5009F0078 /* Debug */,
+				7DB057581D5614E5009F0078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7DB057591D5614E5009F0078 /* Build configuration list for PBXNativeTarget "OvoFlickrTechTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DB0575A1D5614E5009F0078 /* Debug */,
+				7DB0575B1D5614E5009F0078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7DB057231D5614E5009F0078 /* Project object */;
+}
