@@ -31,4 +31,16 @@ class FeedParser {
                         title: title,
                         takenDate: jsonDateFormatter.dateFromString(dateStr) ?? NSDate())
     }
+    
+    static func feedItemsFromJSON(json: JSON) -> [FeedItem] {
+        
+        let itemsJSON = json["items"]
+        var feedItems = [FeedItem]()
+        
+        for(_, itemJSON):(String, JSON) in itemsJSON {
+            let item = singleFeedItemFromJSON(itemJSON)
+            feedItems.append(item)
+        }
+        return feedItems
+    }
 }
