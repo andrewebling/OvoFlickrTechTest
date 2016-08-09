@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D3DB51F1D59C692003D94F5 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB057791D563E14009F0078 /* AlamofireImage.framework */; };
 		7DA0F6601D56517F009F354A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB0576D1D56276A009F0078 /* Alamofire.framework */; };
 		7DA0F6611D56517F009F354A /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB057791D563E14009F0078 /* AlamofireImage.framework */; };
 		7DA0F6701D565368009F354A /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB0576A1D562321009F0078 /* FeedItem.swift */; };
@@ -50,7 +51,6 @@
 		7DB057751D5632C9009F0078 /* FlickrController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB057731D5632C9009F0078 /* FlickrController.swift */; };
 		7DB057771D563A13009F0078 /* FeedItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB057761D563A13009F0078 /* FeedItemCollectionViewCell.swift */; };
 		7DB057781D563A13009F0078 /* FeedItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB057761D563A13009F0078 /* FeedItemCollectionViewCell.swift */; };
-		7DB0577A1D563E14009F0078 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB057791D563E14009F0078 /* AlamofireImage.framework */; };
 		7DB0577C1D5640DD009F0078 /* TimeAgoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB0577B1D5640DD009F0078 /* TimeAgoTests.swift */; };
 		7DB0577E1D5640FD009F0078 /* NSDate+timeAgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB0577D1D5640FD009F0078 /* NSDate+timeAgo.swift */; };
 		7DB0577F1D5640FD009F0078 /* NSDate+timeAgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB0577D1D5640FD009F0078 /* NSDate+timeAgo.swift */; };
@@ -136,9 +136,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D3DB51F1D59C692003D94F5 /* AlamofireImage.framework in Frameworks */,
 				7DB0576E1D56276A009F0078 /* Alamofire.framework in Frameworks */,
 				7DB057701D56276E009F0078 /* SwiftyJSON.framework in Frameworks */,
-				7DB0577A1D563E14009F0078 /* AlamofireImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -697,6 +697,7 @@
 				7DA0F66F1D565348009F354A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7DB057261D5614E5009F0078 /* Build configuration list for PBXProject "OvoFlickrTechTest" */ = {
 			isa = XCConfigurationList;
